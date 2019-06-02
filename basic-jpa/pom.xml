@@ -2,13 +2,16 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <parent>
+    <groupId>basic</groupId>
+    <artifactId>basic</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
   <modelVersion>4.0.0</modelVersion>
-
-  <groupId>jpa</groupId>
-  <artifactId>jpa</artifactId>
-  <version>1.0-SNAPSHOT</version>
-
-  <name>jpa</name>
+  <artifactId>basic-jpa</artifactId>
+  <name>basic-jpa</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -17,19 +20,6 @@
   </properties>
 
   <dependencies>
-
-    <!--<dependency>-->
-      <!--<groupId>org.hibernate</groupId>-->
-      <!--<artifactId>hibernate-ehcache</artifactId>-->
-      <!--<version>5.4.0.Final</version>-->
-    <!--</dependency>-->
-
-    <!--<dependency>-->
-      <!--<groupId>net.sf.ehcache</groupId>-->
-      <!--<artifactId>ehcache-core</artifactId>-->
-      <!--<version>2.6.9</version>-->
-    <!--</dependency>-->
-
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId>
