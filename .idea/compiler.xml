@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="basic" />
         <module name="basic-jpa" />
+        <module name="basic-python" />
+        <module name="basiczookeeper" />
         <module name="core" />
         <module name="jpa" />
         <module name="web" />
@@ -17,7 +18,9 @@
       <module name="basic" target="1.8" />
       <module name="basic-jpa" target="1.8" />
       <module name="basic-jpa (1)" target="1.8" />
+      <module name="basic-python" target="1.8" />
       <module name="basic-spring" target="1.8" />
+      <module name="basiczookeeper" target="1.8" />
       <module name="core" target="1.7" />
       <module name="jpa" target="1.8" />
       <module name="springbasic" target="1.8" />
