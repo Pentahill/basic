@@ -22,6 +22,8 @@
     <module>basic-python</module>
     <module>basic-spring</module>
     <module>basic-zookeeper</module>
+      <module>thread</module>
+      <module>thread</module>
   </modules>
 
 </project>
