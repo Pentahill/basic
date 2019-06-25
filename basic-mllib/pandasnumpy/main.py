@@ -4,6 +4,8 @@ from environment import spark
 from pyspark.sql.functions import pandas_udf
 from pyspark.sql.types import LongType
 
+spark.conf.set("spark.sql.execution.arrow.enabled", "false")
+
 # pdf = pd.DataFrame(np.random.rand(100, 3))
 # df = spark.createDataFrame(pdf)
 # df.show()
