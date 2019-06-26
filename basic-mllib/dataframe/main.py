@@ -28,18 +28,18 @@ from pyspark.sql.types import *
 # for name in teenName:
 #     print(name)
 
-# sc = spark.sparkContext
-# lines = sc.textFile("hdfs://192.168.30.117:9000/tmp/txt")
-# parts = lines.map(lambda l: l.split(','))
-# people = parts.map(lambda p: (p[0], p[1].strip()))
-# schemaString = 'name age'
-# fields = [StructField(field_name, StringType(), True) for field_name in schemaString.split()]
-# schema = StructType(fields)
-#
-# schemaPeople = spark.createDataFrame(people, schema)
-# schemaPeople.createOrReplaceTempView("people")
-# teenagers = spark.sql("SELECT * FROM people WHERE age >= 13 AND age <=19")
-# teenagers.show()
+sc = spark.sparkContext
+lines = sc.textFile("hdfs://192.168.30.117:9000/tmp/txt")
+parts = lines.map(lambda l: l.split(','))
+people = parts.map(lambda p: (p[0], p[1].strip()))
+schemaString = 'name age'
+fields = [StructField(field_name, StringType(), True) for field_name in schemaString.split()]
+schema = StructType(fields)
+
+schemaPeople = spark.createDataFrame(people, schema)
+schemaPeople.createOrReplaceTempView("people")
+teenagers = spark.sql("SELECT * FROM people WHERE age >= 13 AND age <=19")
+teenagers.show()
 
 
 
