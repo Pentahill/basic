@@ -21,6 +21,8 @@
     <module>basic-jpa</module>
     <module>basic-spring</module>
     <module>basic-zookeeper</module>
+      <module>basic-java</module>
+      <module>basic-boot</module>
   </modules>
 
 </project>
