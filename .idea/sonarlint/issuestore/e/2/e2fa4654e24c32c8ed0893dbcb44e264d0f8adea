@@ -1,8 +1,0 @@
-
-_python:PrintStatementUsage "-Replace print statement by built-in function.(ãùµ–ıÿÿÿÿ8û£„Ã±-
-}python:S15423"YRename function "multiplyByFactor" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(É•Şùÿÿÿÿ8Ñ©Ä±-
-_python:PrintStatementUsage/"-Replace print statement by built-in function.(à±ïµşÿÿÿÿ8¯î‰Ã±-
-_python:PrintStatementUsage"-Replace print statement by built-in function.(à±ïµşÿÿÿÿ8íûÇÂ±-
-_python:PrintStatementUsage8"-Replace print statement by built-in function.(Ÿ£¢Óüÿÿÿÿ8ÜŞ¬Ä±-
-Zpython:PrintStatementUsage"-Replace print statement by built-in function.(ÃÊÙÉ8‰±õÂ±-
-Dpython:S1481"%Remove the unused local variable "x".(¨Æ¬8ƒ©ÂÂ±-
