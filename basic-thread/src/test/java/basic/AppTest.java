@@ -1,4 +1,4 @@
-package basic;
+package boot;
 
 import static org.junit.Assert.assertTrue;
 

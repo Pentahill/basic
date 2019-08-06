@@ -1,0 +1,19 @@
+management:
+  endpoint:
+    beans:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        exclude: beans
+
+spring:
+  mvc:
+    static-path-pattern: /resources/**
+  resources:
+    static-locations: classpath:/static
+  mustache:
+    cache: false
+    suffix: .html
+  datasource:
+    continue-on-error: false

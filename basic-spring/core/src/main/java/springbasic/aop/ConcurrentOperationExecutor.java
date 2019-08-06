@@ -2,7 +2,6 @@ package springbasic.aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.springframework.core.Ordered;
-import sun.reflect.annotation.ExceptionProxy;
 
 public class ConcurrentOperationExecutor implements Ordered {
 
