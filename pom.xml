@@ -23,6 +23,16 @@
     <module>basic-zookeeper</module>
     <module>basic-java</module>
     <module>basic-boot</module>
+      <module>basic-mockito</module>
   </modules>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-core</artifactId>
+      <version>2.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 
 </project>
