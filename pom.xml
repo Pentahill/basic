@@ -23,7 +23,8 @@
     <module>basic-zookeeper</module>
     <module>basic-java</module>
     <module>basic-boot</module>
-      <module>basic-mockito</module>
+    <module>basic-mockito</module>
+    <module>basic-thread</module>
   </modules>
 
   <dependencies>

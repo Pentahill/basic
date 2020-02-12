@@ -1,0 +1,19 @@
+add_header Access-Control-Allow-Origin *;
+add_header Access-Control-Allow-Headers X-Requested-With;
+add_header Access-Control-Allow-Methods GET,POST,OPTIONS;
+
+server {
+    listen 3000;
+
+    error_log /tmp/error.log;
+    access_log /tmp/access.log;
+
+    location / {
+        proxy_set_header  X-Real-IP $remote_addr;
+        proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header  Host $http_host;
+        proxy_set_header  X-Nginx-Proxy true;
+        proxy_set_header  Connection "";
+        proxy_pass http://localhost:3001;
+    }
+}

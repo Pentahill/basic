@@ -1,0 +1,23 @@
+upstream ml_web {
+    server 192.168.30.62:8080;
+    server 192.168.30.62:8081;
+}
+
+server {
+    listen 8666;
+
+    error_log /tmp/nginx/error.log;
+    access_log /tmp/nginx/access.log;
+
+    location /task/ {
+        proxy_pass http://ml_web/task/;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+    }
+
+    location / {
+        proxy_pass http://ml_web;
+    }
+
+}

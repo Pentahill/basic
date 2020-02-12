@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                            http://www.springframework.org/schema/context
+                            http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="customEditors">
+            <map>
+                <entry key="springbasic.propertyeditor.Car" value="springbasic.propertyeditor.CustomCarEditor"/>
+                <entry key="java.lang.String" value="springbasic.propertyeditor.CustomStringEditor"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="boss" class="springbasic.propertyeditor.Boss">
+        <property name="name" value="John"/>
+        <property name="car" value="奥迪,200,2000.00"/>
+    </bean>
+</beans>

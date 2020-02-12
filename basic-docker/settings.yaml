@@ -1,0 +1,3 @@
+service:
+  web: 8666
+  nginx: 8080
